@@ -1,0 +1,88 @@
+[
+    {
+      "name": "Naukri",
+      "url": "https://www.naukri.com",
+      "params": {
+        "keyword": "{job_title}",
+        "location": "{location}"
+      },
+      "selectors": {
+        "job_listing": "div.jobTuple.bgWhite.br4.mb-8",
+        "title": "a.title.fw500.ellipsis",
+        "company": "a.subTitle.ellipsis.fleft",
+        "location": "li.location",
+        "summary": "ul.listingJobdescription.breadcrumb.clearfix",
+        "job_url": "a.title.fw500.ellipsis",
+        "job_description": "section.job-desc"
+      }
+    },
+    {
+      "name": "Foundit",
+      "url": "https://www.foundit.com/jobs",
+      "params": {
+        "keyword": "{job_title}",
+        "location": "{location}"
+      },
+      "selectors": {
+        "job_listing": "div.job-card",
+        "title": "h2.job-title",
+        "company": "div.job-organization",
+        "location": "div.job-location",
+        "summary": "div.job-description",
+        "job_url": "h2.job-title a",
+        "job_description": "div.job-description-content"
+      }
+    },
+    {
+      "name": "Shine",
+      "url": "https://www.shine.com/job-search",
+      "params": {
+        "search": "{job_title}",
+        "location": "{location}"
+      },
+      "selectors": {
+        "job_listing": "li.search_listing",
+        "title": "h2.search_listing-title",
+        "company": "span.search_listing-company",
+        "location": "span.search_listing-location",
+        "summary": "ul.search_listing-description",
+        "job_url": "h2.search_listing-title a",
+        "job_description": "div.jd-description"
+      }
+    },
+    {
+      "name": "Indeed",
+      "url": "https://www.indeed.com/jobs",
+      "params": {
+        "q": "{job_title}",
+        "l": "{location}"
+      },
+      "selectors": {
+        "job_listing": "div.jobsearch-SerpJobCard",
+        "title": "a.jobtitle",
+        "company": "span.company",
+        "location": "div.recJobLoc",
+        "summary": "div.summary",
+        "job_url": "a.jobtitle",
+        "job_description": "div.jobsearch-jobDescriptionText"
+      }
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/jobs",
+      "params": {
+        "keywords": "{job_title}",
+        "location": "{location}"
+      },
+      "selectors": {
+        "job_listing": "li.result-card.job-result-card",
+        "title": "h3.job-result-card__title",
+        "company": "a.job-result-card__subtitle-link",
+        "location": "span.job-result-card__location",
+        "summary": "p.job-result-card__snippet",
+        "job_url": "a.result-card__full-card-link",
+        "job_description": "div.description__text"
+      }
+    }
+  ]
+  
