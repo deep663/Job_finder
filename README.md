@@ -1,4 +1,4 @@
-# Job Scraping Project
+# Job Finder
 
 ## Overview
 
